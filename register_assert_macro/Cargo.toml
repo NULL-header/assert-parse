@@ -3,6 +3,18 @@ name = "register-assert-macro"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+proc-macro = true
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+syn = "1.0"
+proc-macro2="1.0"
+rstest="0.13"
+proc-macro-error="1.0"
+thiserror="1.0"
+
+[dev-dependencies]
+quote = "1.0"
+assert-parse-core = { path = "../assert_parse_core", version = "1.0" }
