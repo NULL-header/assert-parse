@@ -10,7 +10,7 @@ repository = "https://github.com/NULL-header/assert-parse"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-assert_parse_core = { path = "./assert_parse_core", version = "1.0" }
+assert-parse-core = { path = "./assert_parse_core", version = "1.0" }
 
 [workspace]
-members = [ "assert-parse-core", "register-assert-macro" ]
+members = [ "assert_parse_core", "register_assert_macro" ]
