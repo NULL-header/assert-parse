@@ -7,6 +7,7 @@ use proc_macro::TokenStream;
 use quote::quote;
 
 #[proc_macro]
+/// make fixture for assert
 pub fn register_assert(args: TokenStream) -> TokenStream {
     let args: Args = match syn::parse(args) {
         Ok(a) => a,
