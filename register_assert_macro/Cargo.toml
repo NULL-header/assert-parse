@@ -1,5 +1,5 @@
 [package]
-name = "register_assert_macro"
+name = "register-assert-macro"
 version = "0.1.0"
 edition = "2021"
 
