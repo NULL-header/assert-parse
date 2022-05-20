@@ -1,6 +1,6 @@
 [package]
-name = "register-assert-macro"
-version = "0.1.0"
+name = "assert-parse-register-assert-macro"
+version = "1.0.0"
 edition = "2021"
 
 [lib]
@@ -12,7 +12,6 @@ proc-macro = true
 syn = "1.0"
 proc-macro2="1.0"
 rstest="0.13"
-proc-macro-error="1.0"
 thiserror="1.0"
 quote = "1.0"
 
