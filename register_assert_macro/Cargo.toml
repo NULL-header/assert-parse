@@ -1,6 +1,6 @@
 [package]
 name = "assert-parse-register-assert-macro"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 repository = "https://github.com/NULL-header/assert-parse"
 description = "The util macro for 'assert-parse'"
