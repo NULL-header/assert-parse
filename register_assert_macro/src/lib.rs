@@ -20,7 +20,7 @@ pub fn register_assert(args: TokenStream) -> TokenStream {
     quote! {
         type Assert = assert_parse::Assert<#parsable, #error>;
 
-        #[fixture]
+        #[rstest.fixture]
         fn assert() -> Assert {
             make_assert()
         }
