@@ -1,7 +1,10 @@
 [package]
-name = "assert_parse_core"
+name = "assert-parse-core"
 version = "1.0.0"
 edition = "2021"
+repository = "https://github.com/NULL-header/assert-parse"
+description = "The core for 'assert-parse'"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
