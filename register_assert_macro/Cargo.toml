@@ -2,6 +2,9 @@
 name = "assert-parse-register-assert-macro"
 version = "1.0.0"
 edition = "2021"
+repository = "https://github.com/NULL-header/assert-parse"
+description = "The util macro for 'assert-parse'"
+license = "MIT"
 
 [lib]
 proc-macro = true
