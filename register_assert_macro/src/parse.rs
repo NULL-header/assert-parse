@@ -32,6 +32,15 @@ pub struct Args {
     error: Ident,
 }
 
+impl Args {
+    pub fn get_parsable(&self) -> &Ident {
+        &self.parsable
+    }
+    pub fn get_error(&self) -> &Ident {
+        &self.error
+    }
+}
+
 impl Parse for Args {
     fn parse(input: ParseStream) -> syn::Result<Self> {
         if input.is_empty() {
