@@ -22,7 +22,7 @@ pub fn register_assert(args: TokenStream) -> TokenStream {
 
         #[rstest::fixture]
         fn assert() -> Assert {
-            make_assert()
+            assert_parse::make_assert()
         }
     }
     .into()
