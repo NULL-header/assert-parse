@@ -17,8 +17,12 @@ pub fn register_assert(args: TokenStream) -> TokenStream {
     };
     let parsable = args.get_parsable();
     let error = args.get_error();
+    let generics = match args.get_generics() {
+        Some(i) => quote! {#i},
+        None => quote! {},
+    };
     quote! {
-        type Assert = assert_parse::Assert<#parsable, #error>;
+        type Assert = assert_parse::Assert<#parsable #generics, #error>;
 
         #[rstest::fixture]
         fn assert() -> Assert {
